@@ -2,13 +2,21 @@
 @import 'abstract/variables';
 //vendor
 
-//tipografias
 //base
 @import 'base/reset';
+@import 'base/tipografia';
 //layaut
+@import 'layaut/header';
+@import 'layaut/sections';
+@import 'layaut/portada';
+@import 'layaut/paquete-turistico';
+@import 'layaut/destinos';
+@import 'layaut/contacto';
+@import 'layaut/footer';
 
 //component
-
+@import 'components/nav';
+@import 'components/card';
 //page
 
 //theme

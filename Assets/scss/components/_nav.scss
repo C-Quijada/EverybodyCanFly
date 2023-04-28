@@ -1,0 +1,16 @@
+.navegacion{
+    display: inline-block;
+   
+    padding: 1rem;
+
+    &__items{
+        display: inline-block;
+        margin: 0 1rem;
+       
+    }
+    &__link{
+        text-decoration: none;
+        color: white;
+  
+    }
+}

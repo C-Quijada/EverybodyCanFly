@@ -1,0 +1,22 @@
+.footer{
+    background-color: purple;
+    color: azure;
+    padding:2rem;
+    &__derechos{
+        display: inline-block;
+    }
+}
+.navFooter{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    &__item{
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    &__link{
+        color: white;
+        text-decoration: none;
+    }
+}
