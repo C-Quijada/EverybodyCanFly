@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Everybody can fly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/estilos.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
     <!--barra de navegacion-->
     <header class="header">
       <div class="header__titulo">
-        <span class="fz--1">Everybody can fly</span>
+        <span class="fz--1">Everybody can fly!</span>
       </div>
 
       <ul class="navegacion">
@@ -22,96 +23,116 @@
         <li class="navegacion__items"><a href="" class="navegacion__link fz--2">Paquetes</a></li>
       </ul>
     </header>
-
+<!--portada ------------------------------------------------>
     <section class="portada">
+      
       <div class="portada__texto">
-        <h2>Aqui encuentras los mejores mejores destinos turisticos, y recuerda Everybody can fly... fly, its a placer</h2>
+        <h1 class="c--cuarto fz--6">Ahora todos pueden volar</h1>
+        <p class="fz--2 c--cuarto">No te pierdas las ofertas increibles que te ofrecemos. Muchos destinos turisticos!, solo decide donde quieres ir!</p>
       </div>
+
       <div class="portada__formulario">
-        <form action="">
-          <h3>Cuando comienzan tu aventura</h3>
+        <form class="formularioDestino">
+          <h3 class="formularioDestino__titulo">Cuando comienzan tu aventura</h3>
+          <div class="group">
+            <label for="origen" class="group__label">Ciudad de salida</label>
+            <input type="text" class="group__input" name="origen" id="origen">
+          </div>
+          <div class="group">
+            <label for="CiudaDestino" class="group__label">Ciudad de destino</label>
+            <input type="text" class="group__input" name="CiudaDestino" id="CiudaDestino">
+          </div>
+          <div class="group">
+            <label for="fechaViaje" class="group__label">Fecha de salida</label>
+            <input type="date" class="group__input" name="fechaViaje" id="fechaViaje">
+          </div>
+          <div class="group">
+            <label for="fechaRegreso" class="group__label">Fecha de regreso</label>
+            <input type="date" class="group__input" name="fechaRegreso" id="fechaRegreso">
+          </div>
+
+          <div class="group">
+            <label for="cantaidadPasajeros" class="group__label">Cantidad de pasajeros</label>
+            <input type="number" class="group__input" name="cantaidadPasajeros" id="cantaidadPasajeros">
+          </div>
+          <div class="group">
+            <label for="clase" class="group__label">CLase de viaje</label>
+              <select name="clase" id="clase" class="group__input">
+                  <option value="primeraClase">Primera Clase</option>
+                  <option value="SegundaClase">Segunda Clase</option>
+                  <option value="TerceraClase">Tercera Clase</option>
+                  <option value="CuartaClase">Cuarta Clase</option>
+              </select>
+          </div>
+
+          <Input type="submit" value="Cotizar" class="btn btn--succes c--primero btn--center">
+          
         </form>
       </div>
     </section>
 
+<!--paquete turisticos ------------------------------------------------>
 
     <section id="paquetes-turisticos" class="paquetes-turisticos">
+      
       <h2 class="paquetes-turisticos__titulo">Paquetes Turisticos</h2>
-
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
+      <div class="card" id="uuss">
+        <div class="card__group">
+          <div class="card__titulo "><span class="fw--bolder c--primero">Estados Unidos</span></div>
+          <div class="card__parrafo c--primero">Estados Unidos a tan solo $200 mil dolares</div>
+          <div class="btn btn--succes fz--1 c--primero">Comprar</div>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
+      <div class="card" id="moscu">
+        <div class="card__group">
+          <div class="card__titulo "><span class="fw--bolder c--primero">Moscu</span></div>
+          <div class="card__parrafo c--primero">Estados Unidos a tan solo $200 mil dolares</div>
+          <div class="btn btn--succes fz--1 c--primero">Comprar</div>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
+      <div class="card" id="monte-fuji">
+        <div class="card__group">
+          <div class="card__titulo "><span class="fw--bolder c--primero">Japon</span></div>
+          <div class="card__parrafo c--primero">Estados Unidos a tan solo $200 mil dolares</div>
+          <div class="btn btn--succes fz--1 c--primero">Comprar</div>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
+      <div class="card" id="australia">
+        <div class="card__group">
+          <div class="card__titulo "><span class="fw--bolder c--primero">Australia</span></div>
+          <div class="card__parrafo c--primero">Estados Unidos a tan solo $200 mil dolares</div>
+          <div class="btn btn--succes fz--1 c--primero">Comprar</div>
+        </div>
       </div>
 
-    </section>
-
-    <section id="destinos" class="destinos">
-      <h2 class="destinos__titulo">Los destinos turisticos mas visitados</h2>
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
-      </div>
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
-      </div>
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
-      </div>
-      <div class="card">
-        <div class="card__titulo card__img">Titulo</div>
-        <div class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt harum totam, non ipsum quam nemo. Possimus assumenda quas maxime itaque porro eaque. Officiis sapiente ullam, excepturi quae hic quod unde?</div>
-        <div class="btn btn--principal">Comprar</div>
-      </div>
  
 
     </section>
 
     <section id="contacto" class="contacto">
-      <h2>Cuentanos</h2>
-      <form id="fcontacto" action="" class="formulario" >
+      <h2 class="contacto__titulo">Cuentanos</h2>
+      <form id="fcontacto" action="" class="fcontacto" >
         <div class="fcontacto__grupo">
           <label for="nombre" class="fcontacto__label">Nombre:</label>
-          <input type="text" class="input" id="nombre">
+          <input type="text" class="fcontacto__input fcontacto__input--nombre" id="nombre" >
         </div>
         <div class="fcontacto__grupo">
           <label for="email" class="fcontacto__label">E-mail:</label>
-          <input type="email" class="input" id="correo">
+          <input type="email" class="fcontacto__input fcontacto__input--email" id="correo">
         </div>
         <div class="fcontacto__grupo">
           <label for="mensaje" class="fcontacto__label">Mensaje:</label>
-          <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+          <textarea name="fcontacto__input " id="mensaje" cols="30" rows="10" class="fcontacto__input--text-area"></textarea>
         </div>
-        <input type="submit" value="enviar">
+        <input type="submit" value="enviar" class="btn btn--succes c--primero fz--1 ">
       </form>
     </section>
 
 
     <footer class="footer">
-      
       <div class="footer__derechos">Todos los derechos reservados</div>
       <ul class="navFooter">
         <li class="navFooter__item"><a href="" class="navFooter__link">Facebook</a></li>

@@ -1,5 +1,5 @@
 .footer{
-    background-color: purple;
+    background-color: $cuarto;
     color: azure;
     padding:2rem;
     &__derechos{
@@ -16,7 +16,7 @@
     }
 
     &__link{
-        color: white;
+        color: $primero;
         text-decoration: none;
     }
 }

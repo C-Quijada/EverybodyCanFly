@@ -1,3 +1,52 @@
 .contacto{
     text-align: center;
+    &__titulo{
+        padding: 1rem;
+        margin-top: 0.5rem ;
+    }
 }
+
+.fcontacto{
+    width: 35%;
+    margin: auto;
+    &__grupo{
+        margin: 0.5rem;
+        text-align:left ;
+        vertical-align: top;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    &__label{
+        
+        position: absolute;
+        top: 0.3rem;
+        left: 0.3rem;
+    }
+
+    &__input{
+      width: 99%;
+      height: 2rem;
+      box-sizing: border-box;
+      padding-top: 0.3rem ;
+    }
+
+    &__input--nombre{
+        padding-left: 5em;
+    
+      }
+
+    &__input--email{
+        padding-left: 3.25rem;
+    
+      }
+    &__input--text-area{
+        width: 99%;
+        height: 4rem;
+        padding-top: 0.3rem ;
+        padding-left: 4.5rem;
+        box-sizing: border-box;
+      }
+}
+
